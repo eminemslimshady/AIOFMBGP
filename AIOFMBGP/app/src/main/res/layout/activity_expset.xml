@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aiofm.eminem.aiofmbgp.activities.ExpsetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_cjzjg"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cjzjg"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_cjzjg"
+                    android:layout_toRightOf="@id/tv_cjzjg"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/cjzjg" />
+                <Spinner
+                    android:id="@+id/spinner_cjzjg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/edit_cjzjg"
+                    android:entries="@array/unit"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_cjzs"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/cjzs"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_cjzs"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_cjzs"
+                    android:hint="@string/cjzs"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_ljzjg"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ljzjg"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_ljzjg"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_ljzjg"
+                    android:hint="@string/ljzjg"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+                <Spinner
+                    android:id="@+id/spinner_ljzjg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/edit_ljzjg"
+                    android:entries="@array/unit"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_ljzs"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ljzs"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_ljzs"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_ljzs"
+                    android:hint="@string/ljzs"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_bgsj"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bgsj"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_bgsj"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_bgsj"
+                    android:hint="@string/bgsj"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+                <Spinner
+                    android:id="@+id/spinner_bgsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/edit_bgsj"
+                    android:entries="@array/unit"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_hdbhxs"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/hdbhxs"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_hdbhxs"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_hdbhxs"
+                    android:hint="@string/hdbhxs"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TxtTitle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bcsz"
+                    android:padding="0dp" />
+                <CheckBox
+                    android:id="@+id/chk_saveExp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    style="@style/CustomCheckboxTheme"
+                    android:checked="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_set"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:gravity="center"
+                android:background="@drawable/btn_bg_blue"
+                android:text="@string/set"
+                android:textColor="@color/colorwhite"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

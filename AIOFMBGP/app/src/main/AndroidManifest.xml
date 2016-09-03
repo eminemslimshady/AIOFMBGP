@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aiofm.eminem.aiofmbgp">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:sharedUserId="android.uid.system"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".views.activities.ConnectActivity"
+            android:label="@string/title_activity_connect"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".views.activities.MainActivity"
+            android:label="主界面"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".views.activities.ExpsetActivity"
+            android:theme="@style/dialog_style" />
+
+        <activity
+            android:name=".views.activities.ImagesetActivity"
+            android:theme="@style/dialog_style" />
+
+        <activity
+            android:name=".views.activities.DevconsetActivity"
+            android:theme="@style/dialog_style" />
+
+        <activity
+            android:name=".views.activities.QaActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".views.activities.AboutdevsetActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".views.activities.DataVisualActivity"
+            android:label="@string/title_activity_data_visual"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme"></activity>
+
+        <service
+            android:name=".services.ConnectService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="COM.AIOFM.EMINEM.AIOFMBGP.CONNECTSERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.CommunicateService"
+            android:exported="false" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

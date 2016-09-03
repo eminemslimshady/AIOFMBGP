@@ -1,0 +1,115 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvLjsb"
+                style="@style/TxtTitle"
+                android:paddingLeft="0dp"
+                android:layout_centerVertical="true"
+                android:text="连接设备型号"
+                android:textColor="@color/colorprimary"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/imageAddDevice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_circle_outline_black_36dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spinnerLjsb"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvLjsb"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@id/imageAddDevice"
+                android:entries="@array/device"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#dbdbdb"
+                android:id="@+id/view" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_marginTop="10dp"
+                style="@style/TxtTitle"
+                android:textColor="@color/colorprimary"
+                android:paddingLeft="0dp"
+                android:text="@string/ljsb"/>
+
+            <com.aiofm.eminem.aiofmbgp.views.controls.SliderListView
+                android:id="@+id/sliderlvDeviceInfo"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="#fff4f7f9"
+                android:cacheColorHint="#00000000"
+                android:divider="#dddbdb"
+                android:dividerHeight="1.0px"
+                android:drawSelectorOnTop="false"
+                android:listSelector="#00000000"
+                android:scrollbars="none"
+                android:scrollingCache="false" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:gravity="center"
+            android:background="@drawable/btn_bg_blue"
+            android:text="连接"
+            android:textColor="@color/colorwhite"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tvQa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="连接遇到问题？"
+                android:textColor="@color/colorprimary"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

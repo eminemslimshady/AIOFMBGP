@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">AIOFMBGP</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    //menu string
+    <string name="action_settings">关于</string>
+    <string name="andorluca">1型大气测量设备</string>
+    <string name="mvccmos">2型大气测量设备</string>
+    <string name="andorluca1">1型大气测量设备设置</string>
+    <string name="mvccmos1">2型大气测量设备设置</string>
+    <string name="data_visual">数据可视化</string>
+    <string name="disconnect">断开</string>
+
+    //control text
+    <string name="ip">IP:</string>
+    <string name="port">Port:</string>
+    <string name="ljsb">连接设备:</string>
+    <string name="ljsb1">1型连接设备</string>
+    <string name="ljsb2">2型连接设备</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_connect">连接</string>
+
+    //控制Andor Luca CCD相关
+    <string name="bgcssz">参数设置1</string>
+    <string name="txsz">参数设置2</string>
+    <string name="gysz">关于1型大气测量设备设置</string>
+    <string name="dkxj">打开设备</string>
+    <string name="kscj">开始采集</string>
+    <string name="sbyxzt">设备运行状态</string>
+    <string name="cjzjg">采集帧间隔</string>
+    <string name="cjzs">采集帧数</string>
+    <string name="ljzjg">累积桢间隔</string>
+    <string name="ljzs">累积帧数</string>
+    <string name="bgsj">曝光时间</string>
+    <string name="hdbhxs">灰度变换系数</string>
+    <string name="qshzb">起始横坐标</string>
+    <string name="qszzb">起始纵坐标</string>
+    <string name="txkd">图像宽度</string>
+    <string name="txgd">图像高度</string>
+    <string name="spxz">水平旋转</string>
+    <string name="czxz">垂直旋转</string>
+    <string name="bcsz">保存设置</string>
+    <string name="szcs">设置</string>
+    <string name="ztcj">暂停</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_qa">QaActivity</string>
+    <string name="set">设置</string>
+
+    //数据可视化相关
+
+    //QA相关
+    <string name="qatitle">关于</string>
+    <string name="version">版本号 v0.1</string>
+    <string name="bbsm">版本说明以后添加</string>
+    <string name="qacontent">问题以后添加</string>
+    <string name="title_activity_aboutandor">AboutandorActivity</string>
+    <string name="title_activity_aboutmvc">AboutmvcActivity</string>
+    <string name="title_activity_aboutdevset">AboutdevsetActivity</string>
+
+    //下拉刷新ListView相关
+    <string name="header_hint_refresh_time">时间：</string>
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">释放立即刷新</string>
+    //用ellipsis character代替"..."
+    <string name="header_hint_refresh_loading">正在刷新&#8230;</string>
+    <string name="title_activity_data_visual">AIOFMBGP</string>
+</resources>

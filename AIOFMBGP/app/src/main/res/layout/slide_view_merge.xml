@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/holder"
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_edit"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/holder_bg2"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_border_color_black_36dp"
+                android:gravity="center"
+                android:text="修改"
+                android:textSize="10sp"
+                android:textColor="@color/floralwhite" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_select"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/holder_bg3"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_select_all_black_36dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:text="标为选中"
+                android:textColor="@color/floralwhite" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_del"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/holder_bg"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_delete_black_36dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:text="删除"
+                android:textColor="@color/floralwhite" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</merge>

@@ -1,0 +1,232 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aiofm.eminem.aiofmbgp.fragments.DevsetFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_devType"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/spinner_andorDev"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_devType"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdbdb"
+                    android:id="@+id/view" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree"
+                android:layout_marginTop="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp" >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/TxtTitle"
+                    android:drawableLeft="@drawable/ic_devices_black_36dp"
+                    android:text="@string/sbyxzt"
+                    android:gravity="center_vertical"
+                    android:typeface="serif"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="16dp"/>
+
+                <TextView
+                    android:id="@+id/tv_sbyxxx"
+                    style="@style/TxtTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_title"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree"
+                android:layout_marginTop="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/setting_item_selector"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/TxtTitle"
+                    android:text="@string/dkxj"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_lock_open_black_36dp"
+                    android:typeface="serif"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="16dp"/>
+
+                <CheckBox
+                    android:id="@+id/chk_openCCD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/setting_item_selector"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/TxtTitle"
+                    android:text="@string/kscj"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_camera_black_36dp"
+                    android:typeface="serif"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="16dp"/>
+
+                <CheckBox
+                    android:id="@+id/chk_startCapture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/tv_bgsz"
+                android:text="@string/bgcssz"
+                style="@style/TxtTitle"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/setting_item_selector"
+                android:drawableRight="@drawable/right"
+                android:drawableLeft="@drawable/ic_camera_alt_black_36dp"
+                android:layout_gravity="left|top" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree" />
+
+            <TextView
+                android:id="@+id/tv_txsz"
+                android:text="@string/txsz"
+                style="@style/TxtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:drawableLeft="@drawable/ic_collections_black_36dp"
+                android:drawableRight="@drawable/right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:background="@drawable/setting_item_selector"
+                android:id="@+id/tv_aboutDev"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/TxtTitle"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_info_black_36dp"
+                android:drawableRight="@drawable/right" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorwhitethree" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

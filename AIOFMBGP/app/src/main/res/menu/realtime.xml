@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/actionSuspend"
+        android:title="暂停">
+    </item>
+    <item
+        android:id="@+id/actionFeedMultiple"
+        android:title="接收数据">
+    </item>
+    <item
+        android:id="@+id/actionSetStartPoint"
+        android:title="设为保存起始点">
+    </item>
+    <item
+        android:id="@+id/actionSetEndPoint"
+        android:title="设为保存终止点">
+    </item>
+    <item
+        android:id="@+id/actionSave"
+        android:title="保存数据">
+    </item>
+</menu>

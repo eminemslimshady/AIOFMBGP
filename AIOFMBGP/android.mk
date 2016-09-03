@@ -1,0 +1,3 @@
+LOCAL_NO_STANDARD_LIBRARIES := true
+LOCAL_PACKAGE_NAME := framework-res
+LOCAL_CERTIFICATE := platform

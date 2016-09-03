@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="1型大气测量设备">
+        <menu>
+            <item
+                android:id="@+id/andorset"
+                android:title="@string/andorluca1"
+                android:icon="@drawable/ic_settings_applications_black_36dp"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/mvccmos">
+        <menu>
+            <item android:id="@+id/mvcset"
+                android:title="@string/mvccmos1"
+                android:icon="@drawable/ic_settings_applications_black_36dp"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/data_visual">
+        <menu>
+            <item
+                android:id="@+id/sbxh1ksh"
+                android:title="1型大气测量设备可视化"
+                android:icon="@drawable/ic_assessment_black_36dp"/>
+            <item
+                android:id="@+id/sbxh2ksh"
+                android:title="2型大气测量设备可视化"
+                android:icon="@drawable/ic_assessment_black_36dp"/>
+        </menu>
+    </item>
+
+
+</menu>

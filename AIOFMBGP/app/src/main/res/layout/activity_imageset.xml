@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aiofm.eminem.aiofmbgp.activities.ImagesetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_qshzb"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/qshzb"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_qshzb"
+                    android:layout_toRightOf="@id/tv_qshzb"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/qshzb" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_qszzb"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/qszzb"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_qszzb"
+                    android:layout_toRightOf="@id/tv_qszzb"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/qszzb" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_txkd"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/txkd"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_txkd"
+                    android:layout_toRightOf="@id/tv_txkd"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/txkd" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_txgd"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/txgd"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="0dp" />
+                <EditText
+                    android:id="@+id/edit_txgd"
+                    android:layout_toRightOf="@id/tv_txgd"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:hint="@string/txgd" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bcsz"
+                    android:layout_centerVertical="true"
+                    style="@style/TxtTitle"
+                    android:padding="0dp" />
+                <CheckBox
+                    android:id="@+id/chk_saveImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    style="@style/CustomCheckboxTheme"
+                    android:checked="true" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_set2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:gravity="center"
+                android:background="@drawable/btn_bg_blue"
+                android:text="@string/set"
+                android:textColor="@color/colorwhite"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

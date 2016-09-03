@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unit">
+        <item>MS</item>
+        <item>S</item>
+    </string-array>
+    <string-array name="device">
+        //哎，保密需要
+        <item>1型大气测量设备</item>
+        <item>2型大气测量设备</item>
+    </string-array>
+</resources>
